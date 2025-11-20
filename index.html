@@ -475,6 +475,17 @@
             font-family: 'Chakra Petch', 'Arial', sans-serif !important;
         }
 
+        .alert-message {
+            color: #ff0000;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: 0;
+            font-family: 'Chakra Petch', 'Arial', sans-serif !important;
+        }
+
 
 
 
@@ -525,6 +536,28 @@
             }
             100% {
                 box-shadow: 0 0 0 0 rgba(21, 101, 192, 0);
+            }
+        }
+
+        /* Estilo para o cupom pulsante */
+        .coupon-code {
+            color: #00bcd4;
+            font-weight: 700;
+            animation: pulseText 2s ease-in-out infinite;
+            display: inline-block;
+            text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+        }
+
+        @keyframes pulseText {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+                text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.9;
+                text-shadow: 0 0 20px rgba(0, 188, 212, 0.8), 0 0 30px rgba(0, 188, 212, 0.6);
             }
         }
 
@@ -647,6 +680,11 @@
                 margin-bottom: 20px;
             }
 
+            .alert-message {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
             .container {
                 margin-top: 5px;
             }
@@ -727,6 +765,10 @@
                 line-height: 1.3;
             }
 
+            .alert-message {
+                font-size: 13px;
+                margin-bottom: 15px;
+            }
 
             .header-banner {
                 padding: 7px 0;
@@ -917,6 +959,10 @@
                 font-size: 14px;
             }
 
+            .alert-message {
+                font-size: 11px;
+                margin-bottom: 10px;
+            }
 
             .description {
                 font-size: 13px;
@@ -972,11 +1018,14 @@
                 <div class="method-image animated fadeInLeft">
                     <img src="FOTO.jpg" alt="Método Grátis" class="method-image-content">
                 </div>
+                <div class="alert-message animated fadeInRight">
+                    APENAS CONTAS NOVAS!
+                </div>
                 <div class="main-headline animated fadeInRight">
-                    ESTOU SELECIONANDO APENAS ALGUMAS PESSOAS PARA PARTICIPAR E ESTAR RECEBENDO OS 50R$
+                    CRIE SUA CONTA CLICANDO NO BOTÃO ABAIXO, FAÇA A VERIFICAÇÃO E APLIQUE O CUPOM PROMOCIONAL APÓS A VERIFICAÇÃO <span class="coupon-code">QUEROREAL@</span> E VEJA SEU SALDO SUBIR
                 </div>
                 <button class="cta-button pulse animated fadeInRight" onclick="redirectToWhatsApp()">
-                    GARANTA OS 50R$
+                    GARANTIR SALDO REAL
                 </button>
             </div>
         </div>
@@ -1095,8 +1144,8 @@
                 console.log('Eventos enviados com IDs:', eventId, purchaseEventId);
             }
             
-            // Redirecionar para WhatsApp
-        window.location.href = "https://wa.me/5531997712920?text=Vi%20o%20an%C3%BAncio%20e%20quero%20resgatar%20meus%20R%2450%0AO%20que%20devo%20fazer%20pra%20receber%3F";
+            // Redirecionar para link
+        window.location.href = "https://afun.bet.br/a/13ci3n";
         }
         
     </script>
